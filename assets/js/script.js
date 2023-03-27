@@ -14,6 +14,11 @@ const parallaxInstance = new Parallax(scene);
 parallaxInstance.invert(false, false)
 parallaxInstance.scalar(30, 30)
 
+var vert = document.getElementById('vert');
+const vertpara = new Parallax(vert);
+vertpara.invert(false, false)
+vertpara.scalar(30, 30)
+
 
 
 var hope = document.getElementById('hope');
