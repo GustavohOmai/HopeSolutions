@@ -20,3 +20,19 @@ var hope = document.getElementById('hope');
 const hopepara = new Parallax(hope);
 hopepara.invert(false, false)
 hopepara.scalar(10, 10)
+
+
+
+AOS.init({
+  disable: false,
+  offset: 400, 
+});
+
+if ($(window).width() <= 960) {
+  AOS.init({
+    disable: true,
+
+  });
+} else {
+
+}AOS.init();
