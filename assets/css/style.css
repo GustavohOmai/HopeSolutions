@@ -234,7 +234,8 @@ label span:nth-child(3) {
     justify-content: center;
     border-radius: 100%;
     border: var(--white) 1px solid;
-    padding: .6rem;
+    min-width: 50px;
+    min-height: 50px;
     margin-top: 1rem;
 }
 
@@ -257,14 +258,18 @@ label span:nth-child(3) {
 
 @media (max-width: 768px) {
 
-
+    .bolinhas{
+        margin-bottom: 6rem;
+    }
+    
     header{
         position: relative;
         z-index: 9999;
     }
 
     .social a{
-        width: 40px;
+        min-width: 40px;
+        min-height: 40px;
     }
 
     .social img{
