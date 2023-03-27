@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Hope Solutions</title>
+</head>
+
+<body>
+
+    <main class="bg-gradient">
+        <header id="header">
+            <div class="logo desk">
+                <a href=""><img src="assets/images/logo-hope.png" alt="logo Hope Solutions"></a>
+            </div>
+            <nav class="nav-lg">
+                <ul>
+                    <li><span class="navanimation"><a href="#sobre">Sobre nós</a></span></li>
+                    <li><span class="navanimation"><a href="#projetos">Projetos</a></span></li>
+                    <li><span class="navanimation"><a href="#time">Time</a></span></li>
+                    <li><span class="navanimation"><a href="#contato">Contato</a></span></li>
+                </ul>
+            </nav>
+
+            <div class="logo mobile">
+                <img src="assets/images/logo-hope-vert.png" alt="logo Hope Solutions">
+            </div>
+
+
+            <div class="menu">  
+                <div class="container nav-mob">
+                    <input type="checkbox" id="checkbox-menu" onclick="hamburguer()">
+
+                    <label for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <nav id="nav-mob" class="display-none">
+                    <ul>
+                        <li><a href="#sobre">Sobre nós</a></span></li>
+                        <li><a href="#projetos">Projetos</a></span></li>
+                        <li><a href="#time">Time</a></span></li>
+                        <li><a href="#contato">Contato</a></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="d-flex  w-100vw h-100vh" >
+            <div class="d-flex w-80vw h-100vh p-absolute" >
+                <div class="bolinhas no-drag" id="scene">
+                    <img src="assets/images/bolinhas.png" alt="" class="no-drag rotate-mobile" data-depth="0.1">
+                </div>
+                <div class="bolinhas" id="hope">
+                    <img src="assets/images/HOPE-title.png" alt="" class="no-drag" data-depth="0.1">
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="partners container">
+                    <h2>Partners:</h2>
+                    <div class="partners-logo">
+                        <a href="https://www.fiap.com.br/" target="_blank"><img src="assets/images/fiap-logo.png" alt="logo fiap"></a>
+                        <a href="https://senseplus.com.br" target="_blank"><img src="assets/images/sense-logo.png" alt="logo sense plus"></a>
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href="https://www.instagram.com/hopesolutions_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+<script src="./assets/js/script.js"></script>
+
+
+</html>
