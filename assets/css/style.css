@@ -261,7 +261,7 @@ label span:nth-child(3) {
     .bolinhas{
         margin-bottom: 6rem;
     }
-    
+
     header{
         position: relative;
         z-index: 9999;
@@ -332,8 +332,16 @@ label span:nth-child(3) {
         z-index: 99;
     }
 
+    .logo img{
+        width: 55%;
+    }
+
     #id-mob{
         margin-top: 5rem;
+    }
+
+    .bg-gradient {
+        background: linear-gradient(0deg, #1AAEA2 0%, #1E827F 21.35%, #24464F 100%);
     }
     
 }
