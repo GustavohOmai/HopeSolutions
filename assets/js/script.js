@@ -41,3 +41,23 @@ if ($(window).width() <= 960) {
 } else {
 
 }AOS.init();
+
+$(document).ready(function () {
+  $('.projetos').slick({
+  dots: true,
+  infinite: true,
+  arrows:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 300,
+});
+
+$('.colaboradoresmobile').slick({
+  dots: true,
+  infinite: true,
+  arrows:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 300,
+});
+});
