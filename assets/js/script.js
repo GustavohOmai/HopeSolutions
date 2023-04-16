@@ -60,4 +60,13 @@ $('.colaboradoresmobile').slick({
   slidesToScroll: 1,
   speed: 300,
 });
+
+$('.slick-produtos').slick({
+  dots: true,
+  infinite: true,
+  arrows:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 300,
+});
 });

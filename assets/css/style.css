@@ -299,7 +299,7 @@ h1 {
 
 .word90 {
     position: absolute;
-    right: 0;
+    right: 2px;
     transform: rotate(-90deg);
     margin-right: -7rem;
     margin-top: -3rem;
@@ -418,6 +418,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.colaborador a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
 }
 
@@ -440,14 +448,225 @@ h1 {
     margin-top: 8rem;
 }
 
+.colaborador img{
+    transition: .5s;
+    margin-top: 1rem;
+}
+
+
 .only-mobile{
     display: none;
 }
 
+.colaborador img:hover{
+    transform: scale(1.05);
+}
+
+.produtos{
+    margin: 5rem 0rem;
+}
+
+.produtos h2{
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.card{
+    width: 250px;
+    height: 200px;
+    background: #1E827F;
+    box-shadow: 10px 7px 4px rgba(112, 84, 84, 0.25);
+    border-radius: 100px 30px;
+}
+
+.card a{
+    border-radius: 100px 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card img{
+    align-self: center;
+    width: 100px;
+}
+
+.card h3{
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card p{
+    color: var(--white);
+    font-size: .8rem;
+    font-weight: 100;
+    margin: 1rem 0;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.fileira-produtos{
+    margin-top: 5rem;
+}
+
+.slick-produtos{
+    width: 100%;
+}
+
+.produtos-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2{
+    color: var(--white);
+    font-size: 5rem;
+}
+
+footer{
+    padding-top: 3rem;
+}
+
+.btn-enviar{
+    background-color: var(--ligh-green);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+
+form {
+    border-radius: 5px;
+    margin-left: 20%;
+    width: 80%;
+    padding: 20px;
+}
+
+.form-control{
+    width: 100%!important;
+    height: 3.5rem!important;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius:30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    padding-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.p-top-text{
+    padding-top: 1rem;
+}
+
+input::placeholder {
+    color: #fff!important;
+    font-size: 1rem;
+    font-weight: 100;
+}
+textarea::placeholder {
+    color: #fff!important;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+textarea{
+    min-height: 100px;
+    resize: none;
+}
+.w-50{
+    width: 50%;
+}
+
+.icons-contato{
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-contato a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    min-width: 40px;
+    min-height: 40px;
+    transition: .8s;
+}
+.d-flex-column{
+    max-width: 100%;
+}
+
+.d-flex-contato{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.icons-contato a:hover{
+    background: #fff;
+}
+
+.icons-contato a:hover .fa-brands {
+    color: var(--medium-green);
+}
+.icons-contato-footer h3{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
 
 
-  
+.letreiro{
+    margin-right: 5rem;
+}
+
 @media (max-width: 768px) {
+
+    form {
+        border-radius: 5px;
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer h2{
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+    .w-50{
+        width: 100%;
+    }
+
+    .produtos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+    }
+    .produtos h2{
+        color: var(--white);
+        font-size: 2rem;
+    }
 
     .slick-next{
         margin-right: -10px;
