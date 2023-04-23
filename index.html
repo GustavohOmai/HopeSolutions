@@ -28,7 +28,7 @@
 
 <body>
 
-    <main class="bg-gradient">
+    <main class="bg-gradient" id="section-home">
         <header id="header">
 
             <div class="logo desk">
@@ -37,12 +37,15 @@
 
             <nav class="nav-lg">
                 <ul>
-                    <li><span class="navanimation"><a href="#sobre">Sobre nós</a></span></li>
-                    <li><span class="navanimation"><a href="#projetos">Projetos</a></span></li>
-                    <li><span class="navanimation"><a href="#time">Time</a></span></li>
-                    <li><span class="navanimation"><a href="#contato">Contato</a></span></li>
+                    <li><span class="navanimation"><a href="#section-who">Sobre nós</a></span></li>
+                    <li><span class="navanimation"><a href="#section-projetos">Projetos</a></span></li>
+                    <li><span class="navanimation"><a href="#section-team">Time</a></span></li>
+                    <li><span class="navanimation"><a href="#section-footer">Contato</a></span></li>
                 </ul>
             </nav>
+  
+
+
 
             <div class="logo mobile">
                 <img src="assets/images/logo-hope-vert.png" alt="logo Hope Solutions">
@@ -60,17 +63,30 @@
                 </div>
                 <nav id="nav-mob" class="display-none">
                     <ul>
-                        <li><a href="#sobre">Sobre nós</a></span></li>
-                        <li><a href="#projetos">Projetos</a></span></li>
-                        <li><a href="#time">Time</a></span></li>
-                        <li><a href="#contato">Contato</a></span></li>
+                        <li><a href="#section-who">Sobre nós</a></span></li>
+                        <li><a href="#section-projetos">Projetos</a></span></li>
+                        <li><a href="#section-team">Time</a></span></li>
+                        <li><a href="#section-footer">Contato</a></span></li>
                     </ul>
                 </nav>
             </div>
 
         </header>
 
-        <div class="d-flex  h-100vh">
+        <div class="scrollspy">
+            <ul>
+              <li class="active"><a href="#section-home">01</a></li>
+              <li><a href="#section-phrase">02</a></li>
+              <li><a href="#section-carousel">03</a></li>
+              <li><a href="#section-who">04</a></li>
+              <li><a href="#section-team">05</a></li>
+              <li><a href="#section-projetos">06</a></li>
+            </ul>
+        </div>
+        <div class="progress-bar"></div>
+
+
+        <div class="d-flex  h-100vh" >
             <div class="d-flex w-80vw h-100vh p-absolute">
                 <div class="bolinhas no-drag desk" id="scene">
                     <img src="assets/images/bolinhas.png" alt="" class="no-drag rotate-mobile" data-depth="0.1">
@@ -84,7 +100,7 @@
             </div>
         </div>
 
-        <div class="d-flex">
+        <div class="d-flex" >
             <div class="partners container">
                 <h2>Partners:</h2>
                 <div class="partners-logo">
@@ -106,7 +122,7 @@
     </main>
 
 
-    <section class="bg-divided">
+    <section class="bg-divided" id="section-phrase">
 
         <div class="d-column">
             <div class="d-flex w-100">
@@ -127,7 +143,7 @@
 
     </section>
 
-    <section class="bg-green">
+    <section class="bg-green" id="section-carousel">
         <div class="projetos">
             <img src="assets/images/img-carrossel.png" alt="">
             <img src="assets/images/img-carrossel.png" alt="">
@@ -136,7 +152,7 @@
 
     </section>
 
-    <section class="bg-gradient-animated">
+    <section class="bg-gradient-animated" id="section-who">
         <div class="d-column">
             <div class="d-flex w-100">
                 <div class="quemsomos">
@@ -167,7 +183,7 @@
         </div>
     </section>
 
-    <section class="bg-dark-green d-flex">
+    <section class="bg-dark-green d-flex" id="section-team">
         <div class="container time desk">
             <div class="d-flex">
                 <h2>Conheça o Time</h2>
@@ -251,7 +267,7 @@
         </div>
     </section>
 
-    <section class="bg-divided">
+    <section class="bg-divided" id="section-projetos">
         <div class="d-flex w-100">
             <div class=" container produtos">
                 <h2>Projetos</h2>
@@ -329,7 +345,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark-green">
+    <footer class="bg-dark-green" id="section-footer">
 
         <div class="d-flex-column">
             <div class="d-flex">

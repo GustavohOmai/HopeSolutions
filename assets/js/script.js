@@ -70,3 +70,27 @@ $('.slick-produtos').slick({
   speed: 300,
 });
 });
+
+
+$(document).ready(function() {
+  // Atualiza a classe ativa no Scrollspy lateral fixo
+  $(window).on('scroll', function() {
+    $('.scrollspy li').removeClass('active');
+    var scrollTop = $(window).scrollTop();
+    var documentHeight = $(document).height();
+    var windowHeight = $(window).height();
+    // var progress = (scrollTop / (documentHeight - windowHeight)) * 100;
+    // $('.progress-bar').width(progress + '%')
+    $('section').each(function() {
+      if ($(this).position().top <= scrollTop) {
+        $('.scrollspy li a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+      }
+    });
+    // Adiciona a classe "active" ao primeiro item da lista de navegação
+    $('.scrollspy li:first-child').addClass('active');
+  });
+});
+
+
+
+

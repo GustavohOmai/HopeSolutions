@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -637,7 +638,64 @@ textarea{
     margin-right: 5rem;
 }
 
+.scrollspy {
+    position: fixed;
+    height: 100px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .scrollspy ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrollspy li {
+    margin-bottom: 15px;
+  }
+  
+  .scrollspy li a {
+    display: block;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  .scrollspy li.active a {
+    /* color: var(--black); */
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: translateY(-6rem);
+  }
+  
+  .progress-bar {
+    position: fixed;
+    top: 50%;
+    transform: rotate(90deg);
+    margin-left: -125px;
+    width: 300px;
+    height: 6px;
+    background-color: var(--lighter-green);
+    z-index: 9999;
+    border-radius: 20px;
+  }
+
+
+
 @media (max-width: 768px) {
+
+    .progress-bar {
+        display: none;
+    }
+
+    .scrollspy {
+        display: none;
+    }
 
     form {
         border-radius: 5px;
@@ -820,5 +878,8 @@ textarea{
     .menu {
         display: none;
     }
+
+    
+      
 
 }
