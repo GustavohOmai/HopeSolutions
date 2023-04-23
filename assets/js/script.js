@@ -77,10 +77,6 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     $('.scrollspy li').removeClass('active');
     var scrollTop = $(window).scrollTop();
-    var documentHeight = $(document).height();
-    var windowHeight = $(window).height();
-    // var progress = (scrollTop / (documentHeight - windowHeight)) * 100;
-    // $('.progress-bar').width(progress + '%')
     $('section').each(function() {
       if ($(this).position().top <= scrollTop) {
         $('.scrollspy li a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
@@ -90,7 +86,3 @@ $(document).ready(function() {
     $('.scrollspy li:first-child').addClass('active');
   });
 });
-
-
-
-
